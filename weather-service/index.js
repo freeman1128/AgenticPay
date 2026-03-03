@@ -11,7 +11,7 @@ const PAY_TO = process.env.PAY_TO || "0x0000000000000000000000000000000000000000
 const payment = paymentMiddleware(PAY_TO, {
   "GET /api/weather": {
     price: "$0.01",
-    network: "base-sepolia",
+    network: "base",
     config: {
       description: "Weather API - Get current weather for a city",
     },
