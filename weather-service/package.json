@@ -1,0 +1,28 @@
+{
+  "name": "weather-service",
+  "version": "1.0.0",
+  "description": "Weather service with x402 payment protocol for agent-to-agent trading",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "keywords": [
+    "x402",
+    "agent",
+    "weather",
+    "payment"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@x402/core": "latest",
+    "@x402/evm": "latest",
+    "@x402/express": "latest",
+    "@x402/extensions": "latest",
+    "axios": "^1.6.0",
+    "express": "^4.18.2",
+    "x402-express": "^1.1.0"
+  },
+  "devDependencies": {}
+}
