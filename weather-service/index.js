@@ -1,5 +1,5 @@
-import express from "express";
-import { paymentMiddleware } from "x402-express";
+const express = require("express");
+const { paymentMiddleware } = require("x402-express");
 
 const app = express();
 app.use(express.json());
@@ -11,7 +11,7 @@ const PAY_TO = process.env.PAY_TO;
 const payment = paymentMiddleware(PAY_TO, {
   "GET /api/weather": {
     price: "$0.01",
-    network: "base",
+    network: "base-sepolia",
     config: {
       description: "Weather API - Get current weather for a city",
     },
