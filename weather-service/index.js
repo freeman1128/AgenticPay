@@ -1,5 +1,6 @@
 import express from "express";
 import { paymentMiddleware } from "x402-express";
+const { facilitator } = require("@coinbase/x402");
 
 const app = express();
 app.use(express.json());
@@ -16,7 +17,7 @@ const payment = paymentMiddleware(PAY_TO, {
       description: "Weather API - Get current weather for a city",
     },
   },
-});
+},facilitator);
 
 // Protected endpoint
 app.get("/api/weather", payment, (req, res) => {
